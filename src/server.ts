@@ -1,5 +1,5 @@
 import express, { Application } from "express";
-import socketIO, { Server as SocketIOServer } from "socket.io";
+import { Server as SocketIOServer } from "socket.io";
 import { createServer, Server as HTTPServer } from "http";
 import path from "path";
 import cors from "cors";
@@ -13,7 +13,7 @@ const initializeServer = (): {
 } => {
   const app = express();
   const httpServer = createServer(app);
-  const io = socketIO(httpServer);
+  const io = new SocketIOServer(httpServer);
   app.use(cors());
 
   configureApp(app);
