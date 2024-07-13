@@ -1,0 +1,89 @@
+/* styles.css */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .logo-highlight {
+    color: #007bff; /* Highlight color */
+  }
+  
+  .content-container {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .active-users-panel {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+  }
+  
+  .panel-title {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .video-chat-container {
+    flex-grow: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .talk-info {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .video-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  video {
+    width: 48%; /* Adjust width for two videos side by side */
+    border-radius: 8px;
+    background-color: #000; /* Fallback background color */
+  }
+  
